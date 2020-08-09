@@ -3,6 +3,7 @@ package game;
 public class Jogador {
     private String nome = "";
     private String peca = "";
+    private int vitorias;
 
     public String getNome() {
         return nome;
@@ -18,5 +19,12 @@ public class Jogador {
 
     public void setPeca(String peca) {
         this.peca = peca;
+    }
+
+    public void vitoria(){
+        this.vitorias++;
+    }
+    public int getVitorias(){
+        return this.vitorias;
     }
 }
